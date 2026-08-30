@@ -41,7 +41,7 @@ namespace Estructuras_Control
             }
             //Condicionales Multiples
             Console.WriteLine("Ingrese un numero del 1 al 3 :");
-            int opcion =int.Parse(Console.ReadLine());
+            int opcion = int.Parse(Console.ReadLine());
             switch (opcion)
             {
                 case 1: Console.WriteLine("Opcion 1"); break;
@@ -51,12 +51,12 @@ namespace Estructuras_Control
             }
             // Condicionales Anidado 
 
-            if(opcion== 1)
+            if (opcion == 1)
             {
                 Console.WriteLine("opcion 1");
 
             }
-            else if (opcion== 2)
+            else if (opcion == 2)
             {
                 Console.WriteLine("opcion 2");
             }
@@ -85,9 +85,10 @@ namespace Estructuras_Control
             int contador2 = 1;
             do
             {
-                Console.WriteLine("$"Intento : {contador2}");
-                
-            }
+                Console.WriteLine($"Intento: {contador2}");
+                contador2++;
+            } while (contador2 <= 3);
+        }
+
     }
-            
 }
