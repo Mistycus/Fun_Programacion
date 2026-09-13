@@ -1,4 +1,6 @@
-﻿Console.WriteLine("--funciones--");
+﻿using System.ComponentModel;
+
+Console.WriteLine("--funciones--");
 static void saludar()
 {
     Console.WriteLine("hola, Bienbenido a Fundamentos");
@@ -71,3 +73,31 @@ static double proceso_compra (double monto)
 
 double venta = proceso_compra(550);
 Console.WriteLine($"total a pagar  s/ . {venta}");
+
+Console.WriteLine("---------------------------------");
+Console.WriteLine("FUNCIONES PASOS PARAMETROS DE VALOR");
+Console.WriteLine("---------------------------------");
+
+static void incrementar(int numero)
+{
+    numero = numero + 5;
+    Console.WriteLine($"dentro de la funcion : {numero}");
+}
+
+int z=25;
+incrementar(z);
+Console.WriteLine($"fuera de la funcion : {z}");
+
+Console.WriteLine("---------------------------------");
+Console.WriteLine("FUNCIONES   CON PARAMETROS POR REFERENCIA");
+Console.WriteLine("---------------------------------");
+
+static void incrementar_referencia (ref int numero)
+{
+    numero=numero +10;
+    Console.WriteLine($"dentro de la funcion : {numero}");
+}
+
+int y=30;
+incrementar_referencia(ref y);
+Console.WriteLine($"fuera de la funcion : {y}");
