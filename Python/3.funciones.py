@@ -50,3 +50,25 @@ def proseso_compra(monto):
 
 resultado2 = proseso_compra(550)        
 print(f'total a pagar con igv es : s/ {resultado2}')
+
+
+##FUNCIONES pasos parametros de valor
+
+
+def incrementar_valor(numero):
+    numero = numero +5
+    print(f'dentro funcion : {numero}')
+x=15
+incrementar_valor(x)
+print(f'fuera de la funcion : {x}')
+
+
+## funciones de parametros por referencia
+## ------------------------------------
+def añadir_producto(productos):
+    productos.append("laptop")
+    print(F'dentro funcion : { productos}')
+
+lista_productos= ["impresora ", "ipad ", "iphone"]
+añadir_producto(lista_productos)
+print(f'fuera de funcion : {lista_productos}')
