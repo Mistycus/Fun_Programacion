@@ -51,3 +51,5 @@ for (int filas = 0 ; filas < notas.GetLength(0); filas++)
         Console.WriteLine($"Fila : {filas} , columna :{col} - valor : {notas[filas , col]}");
     }
 }
+
+// hola
