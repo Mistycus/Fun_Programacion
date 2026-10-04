@@ -10,6 +10,7 @@ print(f'Edad {edad}')
 print('validad edad : ')
 if edad <18 :
     print('Eres Menor de Edad')
+    
 
 # Condicional Doble
 if edad >17 :

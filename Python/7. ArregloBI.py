@@ -20,3 +20,4 @@ print ('Recorrer la matriz')
 for fila in range(len(matriz_2)):
     for columna in range(len(matriz_2[fila])):
         print(f'fila : {fila}, columna : {columna}, valor : {matriz_2[fila][columna]}' )
+
