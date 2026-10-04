@@ -34,37 +34,53 @@ print("-----------RECORRIENDO UNA CADENA---------------")
 for i in range(len(mensaje)):
     print(f'{i} -> {mensaje[i]}')
 
-# Ejercicio 
-"""
-leer un codigo de estudiante y su carrera 
-formar una etiqueta 
-moestrar la longitud codigo ,carrera, etiqueta
-mostrar primer y ultimo caracter del codigo
-recorrer cada letra de la carrera
-crear una etiqueta agregando el cemestre  sin alterar la original
+ 
 
-"""
+print("---------METODOS TRABAJAR EN CADENAS---------")
+# Find
 
-print ("-----------> INGRESANDO DATOS <------------")
-print(" ")
-codigo= input ("Ingrese su codigo : ")
-carrera = input ("Ingrese su Carrera : ")
+nombre = "Elvis , Jambo"
+posicion_coma= nombre.find(",")
 
-etiqueta = codigo + "|" + carrera
-etiqueta_periodo = etiqueta + "| 2026 - 2"
+print(f' la como esta en la posicion : {posicion_coma}')
 
-print (etiqueta)
-print(f'Longitud del codigo  : {len(codigo)}')
-print(f'Longitud de la carrera : {len(carrera)}')
-print(f'Longitud de la etiqueta :{len(etiqueta)}')
-if len(codigo) > 0 :
-    print(f' Primer caracter : {codigo[0]}')
-    print(f'Ultimo Caracter : {codigo[len(codigo) -1]}')  
+# Slicing (extraer subcadena)
+email = "MisticusxD@upn.pe"
+posicion_arroba = email.find("@")
+usuario = email[:posicion_arroba]
+dominio = email[posicion_arroba +1 :]
+print(f' usuario  : {usuario}')
+print(f'dominio : {dominio}')
 
-print ("Recorriendo la carrera ")
-for i in range(len(carrera)):
-    print(f'{i} -> {carrera[i]}')
+# Spli
 
-print(etiqueta_periodo)  
+nombre_curso ="BigData y Base de Datos Avanzados"
+partes = nombre_curso.split(" ")
+print(partes)
+print(partes[0])
+print(partes[1])
+print(partes[2])
+print(partes[3])
+print(partes[4])
+print(partes[5])
 
+# Replace
+telefono = "+51-946-645-153"
+telefono_clean = telefono.replace("-", "")
+print(f'Telefono Limpio : {telefono_clean}')
 
+# UPPER poner a mayusculas
+
+nombre_mayuscula = nombre.upper()
+print(nombre_mayuscula)
+
+# LOWER poner a minusculas
+
+nombre_minuscula = nombre.lower()
+print(nombre_minuscula)
+
+# strip (espacios en blanco innesesarios al inicio y al final )
+palabra = "    Aprendiendo Python      "
+palabra_limpia = palabra.strip()
+
+print(f'{palabra_limpia}')
