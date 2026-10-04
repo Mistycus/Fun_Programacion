@@ -101,3 +101,5 @@ static void incrementar_referencia (ref int numero)
 int y=30;
 incrementar_referencia(ref y);
 Console.WriteLine($"fuera de la funcion : {y}");
+
+// actualizacion
